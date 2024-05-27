@@ -1,0 +1,236 @@
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-family: 'Kalam',cursive;
+}
+
+body{
+    /* border: 4px solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.instagram-header{
+    /* border: 2px solid black; */
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.instagram-naslov{
+    color: #333;
+}
+
+.instagram-ikona{
+    font-size: 26px;
+}
+
+.glavni-container{
+    box-shadow: 0px -4px #efefef;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.prvi-dio{
+    /* border: 2px dashed purple; */
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 5px;
+}
+
+.nikola-tesla{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.ime-profila{
+    color: #333;
+}
+
+.tesla-slika{
+    width: 100px;
+    border: 3px solid #c42e93;
+    border-radius: 50%;
+}
+
+.tesla-box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 0px;
+}
+
+.tesla-box2{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    color: #666;
+    font-size: 18px;
+}
+
+.button{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+.prati-button{
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3897f0;
+    color: white;
+    font-size: 18px;
+}
+
+.drugi-dio{
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.podaci-profila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px 0px;
+}
+
+.ime-podatka{
+    color: #666;
+}
+
+.iznos-podatka{
+    color: #333;
+    font-weight: bold;
+}
+
+.treci-dio{
+    width: 45%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.slika-izuma{
+    width: 200px;
+}
+
+.slika{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.ikonice{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    bottom: 5px;
+    height: 20px;
+    align-items: center;
+}
+
+.like{
+    display: flex;
+    height: min-content;
+    align-items: center;
+}
+
+.broj-likeova,.broj-komentara{
+    margin: 2px 0px 0px 6px;
+    font-size: 16px;
+    color: white;
+}
+
+.komentar{
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
+
+.ikona-srce,.ikona-komentar{
+    color: white;
+}
+
+.crveno-srce,.crveni-broj{
+    color: #c42e93;
+}
+
+
+/* --- RESPONZIVNOST Iphone X--- */
+@media screen and (max-width: 376px){
+    .glavni-container{
+        width: 100%;
+        box-shadow: 0px -4px #efefef;
+    }
+    
+    .instagram-header{
+        width: 40%;
+    }
+    
+    .prvi-dio{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .nikola-tesla{
+        width: 100%;
+    }
+
+    .tesla-box1{
+        margin-left: 15px;
+    }
+
+    .button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .drugi-dio{
+        width: 90%;
+        align-self: center;
+    }
+
+    .treci-dio{
+        width: 95%;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .slika-izuma{
+        width: 174px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    body{
+        margin-bottom: 30px;
+    }
+}

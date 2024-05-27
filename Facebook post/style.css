@@ -1,0 +1,281 @@
+* {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4167b2;
+}
+
+.bijeli-container {
+    background-color: white;
+    max-width: 761px;
+    margin: 50px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fb-header {
+    display: flex;
+    margin: 30px 30px;
+}
+
+.logo-slika {
+    width: 50x;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.fesb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.plavi-fesb {
+    margin-bottom: 4px;
+    font-size: 26px;
+    color: #3a5c9f;
+    font-weight: bold;
+}
+
+.plavi-fesb:hover {
+    text-decoration: underline #3a5c9f;
+    cursor: grab;
+}
+
+.datum-vrijeme {
+    color: #666;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+}
+
+.tri-tockice {
+    font-size: 24px;
+    color: #666;
+}
+
+.fb-sadrzaj {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.lorem-ipsum {
+    margin: 0px 30px 20px 30px;
+    font-size: 23px;
+}
+
+.slika {
+    display: flex;
+    flex-direction: column;
+}
+
+.glavna-slika {
+    width: 100%;
+    height: 400px;
+}
+
+.play-circle {
+    font-size: 70px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    left: 370px;
+    bottom: 180px;
+    transition: all .2s ease-in-out;
+}
+
+.play-circle:hover {
+    transform: scale(1.2);
+    cursor: grab;
+}
+
+.box3 {
+    background-color: #e4e9f5;
+    position: absolute;
+    top: 425px;
+    width: 100%;
+}
+
+.mali-tekst {
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #666;
+}
+
+.ime-clanka {
+    margin: 10px 0px 0px 30px;
+    font-size: 25px;
+    position: relative;
+}
+
+.responsive-hide-text1 {
+    position: absolute;
+    left: 450px;
+}
+
+.hide-text {
+    visibility: hidden;
+}
+
+.sivi-tekst {
+    margin: 0px 0px 15px 30px;
+    font-size: 23px;
+    color: #666;
+    z-index: 1;
+    position: relative;
+}
+
+.responsive-hide-text2 {
+    position: absolute;
+    right: 18px;
+}
+
+.fb-footer {
+    display: flex;
+    margin-top: 40px;
+    height: 60px;
+}
+
+.footer-box {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-box:hover {
+    transition: 200ms;
+    background-color: #e4e9f5;
+    cursor: grab;
+}
+
+.like,
+.comment,
+.share {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.like {
+    color: #3a5c9f;
+}
+
+.comment,
+.share {
+    color: #666;
+}
+
+.broj-komentara,
+.broj-dijeljenja {
+    font-size: 20px;
+    color: #666;
+}
+
+.broj-likeova {
+    font-size: 20px;
+    color: #3a5c9f;
+    font-weight: bold;
+}
+
+/* *** RESPONZIVNOST - iPad PRO *** */
+@media screen and (max-width: 551px) {
+    .bijeli-container {
+        width: auto;
+        margin: 110px 20px;
+    }
+
+    .fb-header {
+        margin: 20px 25px;
+    }
+
+    .fesb {
+        margin-left: 18px;
+    }
+
+    .plavi-fesb {
+        font-size: 22px;
+    }
+
+    .datum-vrijeme {
+        font-size: 14px;
+    }
+
+    .tri-tockice {
+        font-size: 22px;
+    }
+
+    .lorem-ipsum {
+        margin: 0px 25px 20px 25px;
+        font-size: 21px;
+    }
+
+    .glavna-slika {
+        height: 250px;
+    }
+
+    .play-circle {
+        font-size: 60px;
+        left: 210px;
+        bottom: 100px;
+    }
+
+    .box3 {
+        top: 360px;
+    }
+
+    .responsive-hide-text1,
+    .responsive-hide-text2 {
+        visibility: hidden;
+        left: 0px;
+    }
+
+    .hide-text {
+        visibility: visible;
+    }
+
+    .mali-tekst {
+        margin-left: 25px;
+    }
+
+    .ime-clanka {
+        margin-left: 25px;
+        font-size: 23px;
+    }
+
+    .sivi-tekst {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+
+    .fb-footer {
+        margin-top: 100px;
+    }
+
+    .like,
+    .comment,
+    .share {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+
+    .broj-likeova,
+    .broj-komentara,
+    .broj-dijeljenja {
+        font-size: 20px;
+    }
+
+}
